@@ -1,8 +1,9 @@
-import { Customer, Order, OrderStatus } from "@prisma/client";
+import { Customer, MethodStatus, Order, OrderStatus } from "@prisma/client";
 import { PaymentDTO } from "../lib/types/paymentDTO";
 import { Api } from "../lib/api";
 import { CustomerAsaasDTO, RequestCustomer } from "../lib/types/requestCustomer";
 import { CreateCustomer } from "../lib/types/createCustomer";
+import { PaymentParams } from "../lib/types/paymentParams";
 
 export class PaymentService {
     private api: Api
@@ -17,9 +18,18 @@ export class PaymentService {
         try {
             const customerId = await this.createCustomer(customer)
             const transaction = await this.createTransaction(customerId, order, customer, payment)
+            if(transaction.success == true) {
+                return {
+                    transactionId: transaction.transactionId,
+                    status: transaction.gatewayStatus,
+                    qrCode: transaction.qrCode,
+                    payload: transaction.payload,
+                    expiration: transaction.expiration
+                }
+            }
             return {
                 transactionId: transaction.transactionId,
-                status: OrderStatus.PAID
+                status: transaction.gatewayStatus,
             }   
         } catch (error) {
             console.error(
@@ -61,32 +71,50 @@ export class PaymentService {
         order: Order, 
         customer: Customer, 
         payment: PaymentDTO
-    ): Promise<{ transactionId: string, gatewayStatus: string }> {
-        const paymentParams = {
+    ) {
+        let paymentParams: PaymentParams = {
             customer: customerId,
-            billingType: "CREDIT_CARD",
+            billingType: customer.method,
             dueDate: new Date().toISOString(),
             value: order.total,
             description: `Pedido #${order.id}`,
             externalReference: order.id.toString(),
-            creditCard: {
-              holderName: payment.creditCardHolder,
-              number: payment.creditCardNumber,
-              expiryMonth: payment.creditCardExpiration?.split("/")[0],
-              expiryYear: payment.creditCardExpiration?.split("/")[1],
-              ccv: payment.creditCardSecurityCode
-            },
-            creditCardHolderInfo: {
-              name: customer.fullName,
-              email: customer.email,
-              cpfCnpj: customer.document,
-              postalCode: customer.zipCode,
-              addressNumber: customer.number,
-              addressComplement: customer.complement,
-              mobilePhone: customer.mobile
-            },
+            
           }
+        if(customer.method == MethodStatus.CREDIT_CARD) {
+            paymentParams = {
+                ...paymentParams,
+                creditCard: {
+                  holderName: payment.creditCardHolder,
+                  number: payment.creditCardNumber,
+                  expiryMonth: payment.creditCardExpiration?.split("/")[0],
+                  expiryYear: payment.creditCardExpiration?.split("/")[1],
+                  ccv: payment.creditCardSecurityCode,
+                },
+                creditCardHolderInfo: {
+                  name: customer.fullName,
+                  email: customer.email,
+                  cpfCnpj: customer.document,
+                  postalCode: customer.zipCode,
+                  addressNumber: customer.number,
+                  addressComplement: customer.complement,
+                  mobilePhone: customer.mobile,
+                },
+              };
+        }
         const res = await this.api.request("POST","/payments", paymentParams)
+        if(customer.method == MethodStatus.PIX) {
+            const qrCode = await this.api.request("GET", `/payments/${res.id}/pixQrCode`)
+            
+            return {
+                transactionId: res.id,
+                gatewayStatus: res.status,
+                qrCode: qrCode.encodedImage,
+                payload: qrCode.payload,
+                expiration: qrCode.expirationDate,
+                success: qrCode.success
+            }
+        }
 
         return {
             transactionId: res.id,

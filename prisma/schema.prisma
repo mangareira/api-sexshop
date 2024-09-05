@@ -25,21 +25,28 @@ model Snack {
   OrderItem   OrderItem[]
 }
 
+enum MethodStatus {
+  PIX
+  CREDIT_CARD
+  BOLETO
+}
+
 model Customer {
-  id           Int      @id @default(autoincrement())
-  fullName     String   @db.VarChar(255)
-  email        String   @unique @db.VarChar(255)
-  mobile       String   @db.VarChar(255)
-  document     String   @db.VarChar(255)
-  zipCode      String   @db.VarChar(255)
-  street       String   @db.VarChar(255)
-  number       String   @db.VarChar(255)
-  complement   String?  @db.VarChar(255)
-  neighborhood String   @db.VarChar(255)
-  city         String   @db.VarChar(255)
-  state        String   @db.Char(2)
-  createdAt    DateTime @default(now())
-  updatedAt    DateTime @updatedAt
+  id           Int          @id @default(autoincrement())
+  fullName     String       @db.VarChar(255)
+  email        String       @unique @db.VarChar(255)
+  mobile       String       @db.VarChar(255)
+  document     String       @db.VarChar(255)
+  zipCode      String       @db.VarChar(255)
+  street       String       @db.VarChar(255)
+  number       String       @db.VarChar(255)
+  complement   String?      @db.VarChar(255)
+  neighborhood String       @db.VarChar(255)
+  city         String       @db.VarChar(255)
+  state        String       @db.Char(2)
+  method       MethodStatus @default(PIX)
+  createdAt    DateTime     @default(now())
+  updatedAt    DateTime     @updatedAt
   Order        Order[]
 }
 
@@ -47,6 +54,12 @@ enum OrderStatus {
   PENDING
   PAID
   CANCELLED
+  CONFIRMED
+  OVERDUE
+  REFUNDED
+  REFUND_REQUESTED
+  REFUND_IN_PROGRESS
+  RECEIVED
 }
 
 model Order {

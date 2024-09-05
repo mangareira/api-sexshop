@@ -24,9 +24,19 @@ export class CheckoutService {
         }))
         const customerCreated = await this.customerRespository.createIfNotExists(customer)
         let orderCreated = await this.orderRespository.create(snackCart, customerCreated)
-        const {status, transactionId} = await this.paymentService.process(orderCreated, customerCreated, payment)
+        const {status, transactionId, qrCode, expiration, payload} = await this.paymentService.process(orderCreated, customerCreated, payment)
 
         orderCreated = await this.orderRespository.update(orderCreated, transactionId, status)
+        if(qrCode) {
+            return {
+                id: orderCreated.id,
+                status,
+                transactionId,
+                qrCode,
+                expiration,
+                payload
+            }    
+        }
         return {
             id: orderCreated.id,
             status,
