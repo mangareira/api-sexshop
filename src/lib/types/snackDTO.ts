@@ -1,6 +1,6 @@
 export type SnackDTO = {
     id: number
-    snack: string
+    name_icon: string
     name: string
     description: string
     image: string

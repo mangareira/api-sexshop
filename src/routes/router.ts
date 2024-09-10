@@ -26,7 +26,7 @@ export class Routes {
 
     initRouter() {
         this.router.get("/orders/:id", this.controller.findOrderById.bind(this.controller))
-        this.router.get("/snacks", this.controller.findSnacks.bind(this.controller))
+        this.router.get("/coisado", this.controller.findSnacks.bind(this.controller))
         this.router.post("/checkout", this.controller.checkout.bind(this.controller))
     }
 }

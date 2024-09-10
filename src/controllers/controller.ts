@@ -12,9 +12,9 @@ export class Controller {
     ){}
 
     async findSnacks(req: Request, res: Response, next: NextFunction) {
-        const { snack } = req.query
+        const { name_icon } = req.query
         try {
-            const result = await this.snackService.findSnacks(String(snack))
+            const result = await this.snackService.findSnacks(String(name_icon))
             res.status(200).json(result)
         } catch (error) {
             next(error)

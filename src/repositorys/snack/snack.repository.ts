@@ -7,7 +7,7 @@ export class SnackRepository implements SnackRepositoryDTO  {
     async findByName(snack: string): Promise<Snack[]> {
         const result = await prisma.snack.findMany({
             where: {
-                snack: {
+                name_icon: {
                     equals: snack
                 }
             }

@@ -8,7 +8,7 @@ import { PaymentParams } from "../lib/types/paymentParams";
 export class PaymentService {
     private api: Api
     constructor() {
-        this.api = new Api
+        this.api = new Api()
     }
     async process(
         order: Order, 
