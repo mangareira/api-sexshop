@@ -1,10 +1,10 @@
 import { OrderRepositoryDTO } from "./order";
 import { prisma } from "../../lib/prisma";
-import { Customer, Order, OrderStatus } from "@prisma/client";
+import { Customer, Order, OrderItem, OrderStatus, Snack } from "@prisma/client";
 import { SnackDTO } from "../../lib/types/snackDTO";
 
 export class OrderRepository implements OrderRepositoryDTO{
-    async findById(id: number): Promise<any> {
+    async findById(id: number): Promise<(Order & { OrderItem: (OrderItem & { snack: Snack })[] } & { customer: Customer }) | null> {
         const result = await prisma.order.findUnique({
             where: {
                 id,
@@ -20,7 +20,7 @@ export class OrderRepository implements OrderRepositoryDTO{
         })
         return result
     }
-    async create(snackCart: SnackDTO[], customer: Customer): Promise<Order> {
+    async create(snackCart: SnackDTO[], customer: Customer): Promise<(Order & { OrderItem: (OrderItem & { snack: Snack })[] } & { customer: Customer })> {
         const result = await prisma.order.create({
             data: {
                 total: snackCart.reduce((acc,snack) => acc + snack.subTotal, 0),
@@ -50,7 +50,7 @@ export class OrderRepository implements OrderRepositoryDTO{
         })
         return result
     }
-    async update(order: Order, transactionId: string, status: OrderStatus): Promise<Order> {
+    async update(order: Order, transactionId: string, status: OrderStatus): Promise<(Order & { OrderItem: (OrderItem & { snack: Snack })[] } & { customer: Customer })> {
         const result = await prisma.order.update({
             where: {
                 id: order.id
@@ -58,6 +58,14 @@ export class OrderRepository implements OrderRepositoryDTO{
             data: {
                 transactionId,
                 status,
+            },
+            include: {
+                OrderItem: {
+                    include: {
+                        snack: true
+                    }
+                },
+                customer: true
             }
         })
         return result

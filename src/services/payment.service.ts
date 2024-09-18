@@ -1,9 +1,10 @@
-import { Customer, MethodStatus, Order, OrderStatus } from "@prisma/client";
+import { Customer, MethodStatus, Order, OrderItem, OrderStatus, Snack } from "@prisma/client";
 import { PaymentDTO } from "../lib/types/paymentDTO";
 import { Api } from "../lib/api";
 import { CustomerAsaasDTO, RequestCustomer } from "../lib/types/requestCustomer";
 import { CreateCustomer } from "../lib/types/createCustomer";
 import { PaymentParams } from "../lib/types/paymentParams";
+import { OrderService } from "./order.service";
 
 export class PaymentService {
     private api: Api
@@ -11,7 +12,7 @@ export class PaymentService {
         this.api = new Api()
     }
     async process(
-        order: Order, 
+        order: (Order & { OrderItem: (OrderItem & { snack: Snack })[] } & { customer: Customer }), 
         customer: Customer, 
         payment: PaymentDTO
     ) {
@@ -68,7 +69,7 @@ export class PaymentService {
     }
     private async createTransaction( 
         customerId: string, 
-        order: Order, 
+        order: (Order & { OrderItem: (OrderItem & { snack: Snack })[] } & { customer: Customer }), 
         customer: Customer, 
         payment: PaymentDTO
     ) {
@@ -77,7 +78,9 @@ export class PaymentService {
             billingType: customer.method,
             dueDate: new Date().toISOString(),
             value: order.total,
-            description: `Pedido #${order.id}`,
+            description: `Pedido #${order.id}: ${order.OrderItem.map((order) => 
+                order.snack.name
+            ).join(", ")}. Entrega: ${customer.street}, ${customer.number}, ${customer.neighborhood}, ${customer.city}, ${customer.state}. Complemento: ${customer.complement} `,
             externalReference: order.id.toString(),
             
           }
