@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "tsx watch ./src/main.ts",
     "build": "rimraf ./build && tsc",
-    "start": "node build/main.js",
+    "start": "node build/src/main.js",
     "db:migrate": "prisma migrate dev",
     "db:seed": "prisma db seed"
   },

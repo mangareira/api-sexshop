@@ -79,7 +79,7 @@ export class PaymentService {
             dueDate: new Date().toISOString(),
             value: order.total,
             description: `Pedido #${order.id}: ${order.OrderItem.map((order) => 
-                order.snack.name
+                order.snack.name+" x"+order.quantity
             ).join(", ")}. Entrega: ${customer.street}, ${customer.number}, ${customer.neighborhood}, ${customer.city}, ${customer.state}. Complemento: ${customer.complement} `,
             externalReference: order.id.toString(),
             
