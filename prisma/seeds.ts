@@ -92,7 +92,7 @@ const snacks = [
       name: "Body com conjunto para pulso e pescoço Tam. P Preto",
       description: "",
       price: 60,
-      image: "https://thumbs2.imgbox.com/a9/ab/tpHnkzN5_t.png"
+      image: `${process.env.API_URL}/fotos/body1.png`
     },
     {
       name_icon: "lingerie",
@@ -106,105 +106,105 @@ const snacks = [
       name: "Body Tam. P Preto",
       description: "",
       price: 69,
-      image: "https://thumbs2.imgbox.com/50/c1/ohJ6L5hG_t.png"
+      image: `${process.env.API_URL}/fotos/body2.png`
     },
     {
       name_icon: "lingerie",
       name: "Body Tam. P Marsala",
       description: "",
       price: 50,
-      image: "https://thumbs2.imgbox.com/1e/05/LEXj7Om6_t.png"
+      image: `${process.env.API_URL}/fotos/body3.png`
     },
     {
       name_icon: "lingerie",
       name: "Body Tam. M Vermelho",
       description: "",
       price: 57,
-      image: "https://thumbs2.imgbox.com/f3/02/ERFJUYVM_t.png"
+      image: `${process.env.API_URL}/fotos/body4.png`
     },
     {
       name_icon: "lingerie",
       name: "Body Tam. P Vermelho sexy",
       description: "",
       price: 30,
-      image: "https://thumbs2.imgbox.com/05/d4/tiKndIMY_t.png"
+      image: `${process.env.API_URL}/fotos/body5.png`
     },
     {
       name_icon: "lingerie",
       name: "Calcinha em renda Laranja com regulagem",
       description: "",
       price: 23,
-      image: "https://thumbs2.imgbox.com/6e/c5/pn9jE9XL_t.png"
+      image: `${process.env.API_URL}/fotos/calcinha-em-renda.png`
     },
     {
       name_icon: "lingerie",
       name: "Calcinhas Tam. P fio duplo JANA",
       description: "",
       price: 23,
-      image: "https://thumbs2.imgbox.com/62/30/3Z7Vbrhd_t.png"
+      image: `${process.env.API_URL}/fotos/calcinha-fio.png`
     },
     {
       name_icon: "lingerie",
       name: "Calcinhas com frases sexy",
       description: "",
       price: 40,
-      image: "https://thumbs2.imgbox.com/a8/89/as7JRCrR_t.png"
+      image: `${process.env.API_URL}/fotos/calcinha-frases.png`
     },
     {
       name_icon: "lingerie",
       name: "Algemas de pelúcia vermelha",
       description: "",
       price: 80,
-      image: "https://thumbs2.imgbox.com/6d/ec/f6MSGrMg_t.png"
+      image: `${process.env.API_URL}/fotos/calcinha-led-pisca.png`
     },
     {
       name_icon: "lingerie",
       name: "Calcinhas comestíveis de diferentes sabores",
       description: "",
       price: 15,
-      image: "https://thumbs2.imgbox.com/2f/0b/EGOwLbly_t.png"
+      image: `${process.env.API_URL}/fotos/calcinhas-comestiveis.png`
     },
     {
       name_icon: "lingerie",
       name: "Conj. Tam. U Marido apressado Vermelho",
       description: "",
       price: 50,
-      image: "https://thumbs2.imgbox.com/b1/d7/3OkiuNtL_t.png"
+      image: `${process.env.API_URL}/fotos/conjunto.png`
     },
     {
       name_icon: "lingerie",
       name: "Conj. Tam. M | Vermelho  ",
       description: "",
       price: 57,
-      image: "https://thumbs2.imgbox.com/a4/82/ZHvQR8lX_t.png"
+      image: `${process.env.API_URL}/fotos/conjunto1.png`
     },
     {
       name_icon: "lingerie",
       name: "Conj. Tam. P | Preto",
       description: "",
       price: 60,
-      image: "https://thumbs2.imgbox.com/a8/32/NWVJ2y9l_t.png"
+      image: `${process.env.API_URL}/fotos/conjunto2.png`
     },
     {
       name_icon: "lingerie",
       name: "Pijama Tam. M Preto liganet",
       description: "",
       price: 66,
-      image: "https://thumbs2.imgbox.com/78/89/8PC1x84b_t.png"
+      image: `${process.env.API_URL}/fotos/pijamas1.png`
     },
     {
       name_icon: "lingerie",
       name: "Pijama Tam. P Camisola algodão",
       description: "",
       price: 69,
-      image: "https://thumbs2.imgbox.com/d4/44/3AGRwq2D_t.png"
+      image: `${process.env.API_URL}/fotos/pijamas2.png`
     },
     {
       name_icon: "acessórios",
       name: "Anel Peniano com Vibração",
       description: "",
       price: 92,
-      image: "https://thumbs2.imgbox.com/f6/5f/2L4dSUxm_t.png"
+      image: `${process.env.API_URL}/fotos/toy1.jpg`
     },
     {
       
@@ -212,7 +212,7 @@ const snacks = [
       name: "EGG Masturbador",
       description: "",
       price: 46,
-      image: "https://thumbs2.imgbox.com/60/37/shzXPOxG_t.png"
+      image: `${process.env.API_URL}/fotos/egg-masturbador.png`
     },
     {
       
@@ -220,7 +220,7 @@ const snacks = [
       name: "EGG Masturbador",
       description: "",
       price: 46,
-      image: "https://thumbs2.imgbox.com/f2/1d/5muq8rRW_t.png"
+      image: `${process.env.API_URL}/fotos/egg-masturbador1.png`
     },
     {
       
@@ -228,7 +228,7 @@ const snacks = [
       name: "EGG Masturbador",
       description: "",
       price: 46,
-      image: "https://thumbs2.imgbox.com/54/c1/fqPcZRrP_t.png"
+      image: `${process.env.API_URL}/fotos/egg-masturbador2.png`
     },
     {
       
@@ -236,231 +236,231 @@ const snacks = [
       name: "Estimulador de clitóris",
       description: "",
       price: 85,
-      image: "https://thumbs2.imgbox.com/ce/72/c6sM1Jtm_t.png"
+      image: `${process.env.API_URL}/fotos/toy4.jpg`
     },
     {
       name_icon: "acessórios",
       name: "Plug in Anal",
       description: "",
       price: 69,
-      image: "https://thumbs2.imgbox.com/0c/9a/VHEEeeak_t.png"
+      image: `${process.env.API_URL}/fotos/toy2.jpg`
     },
     {
       name_icon: "acessórios",
       name: "Vibrador de ponto G",
       description: "",
       price: 120,
-      image: "https://thumbs2.imgbox.com/9c/26/xpZA3xbl_t.jpg"
+      image: `${process.env.API_URL}/fotos/toy3.jpg`
     },
     {
       name_icon: "acessórios",
       name: "Vibrador Massageador",
       description: "",
       price: 345,
-      image: "https://thumbs2.imgbox.com/7a/84/0MS8ANcZ_t.jpg"
+      image: `${process.env.API_URL}/fotos/toy5.jpg`
     },
     {
       name_icon: "acessórios",
       name: "Vibrador (pilha) ponto G ROSA vibração única",
       description: "",
       price: 46,
-      image: "https://thumbs2.imgbox.com/1a/01/UwRXBI8S_t.png"
+      image: `${process.env.API_URL}/fotos/vibrador5.png`
     },
     {
       name_icon: "acessórios",
       name: "Vibrador golfinho ROSA vibração única",
       description: "",
       price: 46,
-      image: "https://thumbs2.imgbox.com/1c/c0/kenlNSI7_t.png"
+      image: `${process.env.API_URL}/fotos/vibrador4.png`
     },
     {
       name_icon: "acessórios",
       name: "Vibrador formato de batom vibração única",
       description: "",
       price: 57,
-      image: "https://thumbs2.imgbox.com/70/d6/M06mDij0_t.png"
+      image: `${process.env.API_URL}/fotos/vibrador3.png`
     },
     {
       name_icon: "acessórios",
       name: "Vibrador sugador e vibrador 10 vibração",
       description: "",
       price: 250,
-      image: "https://thumbs2.imgbox.com/cd/9f/a59Xbgcw_t.png"
+      image: `${process.env.API_URL}/fotos/vibrador7.png`
     },
     {
       name_icon: "acessórios",
       name: "Vibrador longa distância 10 vibrações controlado por APP",
       description: "",
       price: 280,
-      image: "https://thumbs2.imgbox.com/16/49/JnKCXeuS_t.png"
+      image: `${process.env.API_URL}/fotos/vibrador8.png`
     },
     {
       name_icon: "acessórios",
       name: "Vibrador (recarregável) vai e vem 36 vibrações ROSA",
       description: "",
       price: 180,
-      image: "https://thumbs2.imgbox.com/f8/e2/O5YWFK5G_t.png"
+      image: `${process.env.API_URL}/fotos/vibrador10.png`
     },
     {
       name_icon: "acessórios",
       name: "Vibrador (recarregável) vai e vem 36 vibrações DOURADO",
       description: "",
       price: 180,
-      image: "https://thumbs2.imgbox.com/b7/1f/ZBhcA4pL_t.png"
+      image: `${process.env.API_URL}/fotos/vibrador11.png`
     },
     {
       name_icon: "acessórios",
       name: "Vibrador mini bullet Aveludado 1 modos de Vibração",
       description: "",
       price: 27,
-      image: "https://thumbs2.imgbox.com/cf/e5/t4vSQdLD_t.png"
+      image: `${process.env.API_URL}/fotos/vibrador14.png`
     },
     {
       name_icon: "acessórios",
       name: "Vibrador (pilha) personal aveludado",
       description: "",
       price: 57,
-      image: "https://thumbs2.imgbox.com/51/b3/6r3XsjEN_t.png"
+      image: `${process.env.API_URL}/fotos/vibrador13.png`
     },
     {
       name_icon: "acessórios",
       name: "Vibrador (pilha) Ponto G com 30 vibrações",
       description: "",
       price: 184,
-      image: "https://thumbs2.imgbox.com/69/69/awjndyRq_t.png"
+      image: `${process.env.API_URL}/fotos/vibrador12.png`
     },
     {
       name_icon: "acessórios",
       name: "Coleira com algema em couro sexy fantasy",
       description: "",
       price: 185,
-      image: "https://thumbs2.imgbox.com/ae/de/k0lgtgiY_t.png"
+      image: `${process.env.API_URL}/fotos/algema7.png`
     },
     {
       name_icon: "acessórios",
       name: "Algemas - Separador de braços (25 cm)",
       description: "",
       price: 80,
-      image: "https://thumbs2.imgbox.com/3d/4f/ux2c5PAR_t.png"
+      image: `${process.env.API_URL}/fotos/algema8.png`
     },
     {
       name_icon: "acessórios",
       name: "Algemas metal",
       description: "",
       price: 69,
-      image: "https://thumbs2.imgbox.com/8e/7c/4qL29jeH_t.png"
+      image: `${process.env.API_URL}/fotos/algema3.png`
     },
     {
       name_icon: "acessórios",
       name: "Prótese dupla 30,5x4,5 cm",
       description: "",
       price: 184,
-      image: "https://thumbs2.imgbox.com/e4/20/OtHpHwNV_t.png"
+      image: `${process.env.API_URL}/fotos/íntimo3.png`
     },
     {
       name_icon: "acessórios",
       name: "Capa Peniana silicone ROXO 15 cm",
       description: "",
       price: 46,
-      image: "https://thumbs2.imgbox.com/07/f3/DI5FePOt_t.png"
+      image: `${process.env.API_URL}/fotos/íntimo7.png`
     },
     {
       name_icon: "acessórios",
       name: "Anel peniano Rosa ursinho com vibrador",
       description: "",
       price: 27,
-      image: "https://thumbs2.imgbox.com/9f/c4/nFKMa1F5_t.png"
+      image: `${process.env.API_URL}/fotos/íntimo9.png`
     },
     {
       name_icon: "acessórios",
       name: "Capa Peniana silicone transparente 15 cm",
       description: "",
       price: 46,
-      image: "https://thumbs2.imgbox.com/4f/27/jUvcdL1L_t.png"
+      image: `${process.env.API_URL}/fotos/íntimo13.png`
     },
     {
       name_icon: "acessórios",
       name: "Masturbador vagina lanterna (com vibro)",
       description: "",
       price: 138,
-      image: "https://thumbs2.imgbox.com/57/77/mXhiz5pw_t.png"
+      image: `${process.env.API_URL}/fotos/íntimo6.png`
     },
     {
       name_icon: "acessórios",
       name: "Anel companheiro 13x3,5 cm",
       description: "",
       price: 55,
-      image: "https://thumbs2.imgbox.com/12/e3/T0A89Hcj_t.png"
+      image: `${process.env.API_URL}/fotos/íntimo8.png`
     },
     {
       name_icon: "acessórios",
       name: "Anel companheiro 13x3,5 cm Desire",
       description: "",
       price: 92,
-      image: "https://thumbs2.imgbox.com/9a/aa/FwbU18bo_t.png"
+      image: `${process.env.API_URL}/fotos/íntimo5.png`
     },
     {
       name_icon: "acessórios",
       name: "Capa Peniana realístico 7518 16,5x3,5cm cyberskin",
       description: "",
       price: 66,
-      image: "https://thumbs2.imgbox.com/6d/0a/YogPWwon_t.png"
+      image: `${process.env.API_URL}/fotos/íntimo12.png`
     },
     {
       name_icon: "acessórios",
       name: "Disco Menstrual Reutilizável",
       description: "",
       price: 70,
-      image: "https://thumbs2.imgbox.com/a3/88/Ohqipv2S_t.png"
+      image: `${process.env.API_URL}/fotos/íntimo18.png`
     },
     {
       name_icon: "acessórios",
       name: "Plug anal redondo M Pink",
       description: "",
       price: 69,
-      image: "https://thumbs2.imgbox.com/cb/9f/M75ekI20_t.png"
+      image: `${process.env.API_URL}/fotos/íntimo25.png`
     },
     {
       name_icon: "acessórios",
       name: "Coletor menstrual",
       description: "",
       price: 41,
-      image: "https://thumbs2.imgbox.com/15/1d/Enei5IjU_t.png"
+      image: `${process.env.API_URL}/fotos/íntimo17.png`
     },
     {
       name_icon: "acessórios",
       name: "Ducha íntima 230 ml com dois bicos",
       description: "",
       price: 80,
-      image: "https://thumbs2.imgbox.com/87/7b/mR1V1aWE_t.png"
+      image: `${process.env.API_URL}/fotos/íntimo26.png`
     },
     {
       name_icon: "acessórios",
       name: "Plug anal redondo M red",
       description: "",
       price: 69,
-      image: "https://thumbs2.imgbox.com/01/4c/p5FrKzbG_t.png"
+      image: `${process.env.API_URL}/fotos/íntimo23.png`
     },
     {
       name_icon: "acessórios",
       name: "Plug anal coração M ",
       description: "",
       price: 69,
-      image: "https://thumbs2.imgbox.com/20/b7/iDJclxDQ_t.png"
+      image: `${process.env.API_URL}/fotos/íntimo24.png`
     },
     {
       name_icon: "acessórios",
       name: "Plug anal redondo M pink",
       description: "",
       price: 69,
-      image: "https://thumbs2.imgbox.com/18/7f/0qGL28lM_t.png"
+      image: `${process.env.API_URL}/fotos/íntimo21.png`
     },
     {
       name_icon: "acessórios",
       name: "Plug anal redondo red",
       description: "",
       price: 75,
-      image: "https://thumbs2.imgbox.com/1a/4d/CcSCa5wL_t.png"
+      image: `${process.env.API_URL}/fotos/íntimo22.png`
     },
     {
       
@@ -468,7 +468,7 @@ const snacks = [
       name: "Gel de Massagem Preliminares",
       description: "",
       price: 22,
-      image: "https://thumbs2.imgbox.com/f5/0e/irrCyQos_t.png"
+      image: `${process.env.API_URL}/fotos/gel-de-massagem-preliminares.png`
     },
     {
       
@@ -476,7 +476,7 @@ const snacks = [
       name: "Gel de Massagem-Cereja com Limão",
       description: "",
       price: 22,
-      image: "https://thumbs2.imgbox.com/9e/66/DiDhqsyL_t.png"
+      image: `${process.env.API_URL}/fotos/Gel-de-massagem-cereja-com-limão.png`
     },
     {
       
@@ -492,7 +492,7 @@ const snacks = [
       name: "K-med Hot Fire Gel Lubrificante Íntimo",
       description: "",
       price: 16,
-      image: "https://thumbs2.imgbox.com/7b/58/cHTxyphD_t.png"
+      image: `${process.env.API_URL}/fotos/lubrificante-intimo-2.png`
     },
     {
       
@@ -500,7 +500,7 @@ const snacks = [
       name: "Lubrificante Íntimo Gel K-Med 100g",
       description: "",
       price: 36,
-      image: "https://thumbs2.imgbox.com/43/c5/Ca2w1ca4_t.png"
+      image: `${process.env.API_URL}/fotos/lubrificante-intimo-4.png`
     },
     {
       
@@ -508,7 +508,7 @@ const snacks = [
       name: "Gel Lubrificante Íntimo 2 em 1 K-Med",
       description: "",
       price: 36,
-      image: "https://thumbs2.imgbox.com/ab/71/g05hQFly_t.png"
+      image: `${process.env.API_URL}/fotos/lubrificante-intimo-5.png`
     },
     {
       
@@ -516,7 +516,7 @@ const snacks = [
       name: "Lubrificante com sensação de Frescor",
       description: "",
       price: 40,
-      image: "https://thumbs2.imgbox.com/65/3b/1vszjwf0_t.png"
+      image: `${process.env.API_URL}/fotos/lubrificante-intimo-com-sensação-de-frescor-e-calor.png`
     },
     {
       
@@ -524,21 +524,21 @@ const snacks = [
       name: "Sabonete íntimo menta apinil",
       description: "",
       price: 14,
-      image: "https://thumbs2.imgbox.com/a6/f4/tQxG6czI_t.png"
+      image: `${process.env.API_URL}/fotos/sabonete1.png`
     },
     {
       name_icon: "cosmeticos",
       name: "Sabonete íntimo morango apinil",
       description: "",
       price: 14,
-      image: "https://thumbs2.imgbox.com/ed/6c/pH7CmcV6_t.png"
+      image: `${process.env.API_URL}/fotos/sabonete2.png`
     },
     {
       name_icon: "cosmeticos",
       name: "Sabonete íntimo Algodão doce Apinil",
       description: "",
       price: 14,
-      image: "https://thumbs2.imgbox.com/d4/82/qybA2rng_t.png"
+      image: `${process.env.API_URL}/fotos/sabonete3.png`
     },
     {
       
@@ -546,280 +546,280 @@ const snacks = [
       name: "Sabonete íntimo talco Apinil",
       description: "",
       price: 14,
-      image: "https://thumbs2.imgbox.com/7e/50/QVmWzMwy_t.png"
+      image: `${process.env.API_URL}/fotos/sabonete4.png`
     },
     {
       name_icon: "cosmeticos",
       name: "Sabonete íntimo maçã hot Apinil",
       description: "",
       price: 14,
-      image: "https://thumbs2.imgbox.com/7a/e6/swKTekil_t.png"
+      image: `${process.env.API_URL}/fotos/sabonete5.png`
     },
     {
       name_icon: "cosmeticos",
       name: "Sabonete íntimo halls Preto Apinil",
       description: "",
       price: 14,
-      image: "https://thumbs2.imgbox.com/a3/eb/Ncax05wD_t.png"
+      image: `${process.env.API_URL}/fotos/sabonete6.png`
     },
     {
       name_icon: "cosmeticos",
       name: "Sabonete íntimo flor de algodão Apinil",
       description: "",
       price: 14,
-      image: "https://thumbs2.imgbox.com/4f/15/3V2GoT1I_t.png"
+      image: `${process.env.API_URL}/fotos/sabonete7.png`
     },
     {
       name_icon: "cosmeticos",
       name: "Lubrificante intimo K-MED menta",
       description: "",
       price: 14,
-      image: "https://thumbs2.imgbox.com/c2/88/5z15pYgE_t.png"
+      image: `${process.env.API_URL}/fotos/lubrificante-íntimo.png`
     },
     {
       name_icon: "cosmeticos",
       name: "Sabonete íntimo de aroeira Apinil",
       description: "",
       price: 14,
-      image: "https://thumbs2.imgbox.com/17/fe/LXmJfqK3_t.png"
+      image: `${process.env.API_URL}/fotos/sabonete8.png`
     },
     {
       name_icon: "cosmeticos",
       name: "Gel para massagem- cliv Intt",
       description: "",
       price: 90,
-      image: "https://thumbs2.imgbox.com/ca/c0/C6OMRHs1_t.png"
+      image: `${process.env.API_URL}/fotos/GEL-PARA-MASSAGEM.png`
     },
     {
       name_icon: "cosmeticos",
       name: "Lubrificante morango love lub 60g",
       description: "",
       price: 23,
-      image: "https://thumbs2.imgbox.com/d8/09/TnxsSAmE_t.png"
+      image: `${process.env.API_URL}/fotos/lubrificante-corporal2.png`
     },
     {
       name_icon: "cosmeticos",
       name: "Lubrificante hot love lub 60g",
       description: "",
       price: 23,
-      image: "https://thumbs2.imgbox.com/75/e1/C6RBYHbT_t.png"
+      image: `${process.env.API_URL}/fotos/lubrificante-corporal3.png`
     },
     {
       name_icon: "cosmeticos",
       name: "Lubrificante neutro Love lub 60g",
       description: "",
       price: 25,
-      image: "https://thumbs2.imgbox.com/03/bb/hYFy3b1R_t.png"
+      image: `${process.env.API_URL}/fotos/lubrificante-corporal6.png`
     },
     {
       name_icon: "cosmeticos",
       name: "Sabonete íntimo 17 ervas Apinil",
       description: "",
       price: 14,
-      image: "https://thumbs2.imgbox.com/93/55/ZEddGAQF_t.png"
+      image: `${process.env.API_URL}/fotos/sabonete9.png`
     },
     {
       name_icon: "cosmeticos",
       name: "Lubrificante Ice love lub 60g",
       description: "",
       price: 25,
-      image: "https://thumbs2.imgbox.com/ad/d7/goLqUJin_t.png"
+      image: `${process.env.API_URL}/fotos/lubrificante-corporal4.png`
     },
     {
       name_icon: "cosmeticos",
       name: "Lubrificante menta love lub 60g",
       description: "",
       price: 25,
-      image: "https://thumbs2.imgbox.com/12/09/lVoQq3HE_t.png"
+      image: `${process.env.API_URL}/fotos/lubrificante-corporal1.png`
     },
     {
       name_icon: "cosmeticos",
       name: "Lubrificante beijável menta ice 60g",
       description: "",
       price: 34,
-      image: "https://thumbs2.imgbox.com/a3/d0/1eX8Z53T_t.png"
+      image: `${process.env.API_URL}/fotos/lubrificante-frozen.png`
     },
     {
       name_icon: "cosmeticos",
       name: "Spray excitante beijável Power shock menta",
       description: "",
       price: 36,
-      image: "https://thumbs2.imgbox.com/61/87/BoMOyVbu_t.png"
+      image: `${process.env.API_URL}/fotos/spray.png`
     },
     {
       name_icon: "cosmeticos",
       name: "Spray excitante beijável Power shock morango",
       description: "",
       price: 36,
-      image: "https://thumbs2.imgbox.com/7a/59/HdaEkyec_t.png"
+      image: `${process.env.API_URL}/fotos/spray2.png`
     },
     {
       name_icon: "cosmeticos",
       name: "Spray excitante beijável Power shock chiclete",
       description: "",
       price: 36,
-      image: "https://thumbs2.imgbox.com/42/c6/lXN2Vqvc_t.png"
+      image: `${process.env.API_URL}/fotos/spray1.png`
     },
     {
       name_icon: "cosmeticos",
       name: "Lubrificante Hot Premium Beijável - quente",
       description: "",
       price: 35,
-      image: "https://thumbs2.imgbox.com/f8/42/h0FLxHKH_t.png"
+      image: `${process.env.API_URL}/fotos/lubrificante-corporal.png`
     },
     {
       name_icon: "cosmeticos",
       name: "Gel excitante cosméticos em gel",
       description: "",
       price: 15,
-      image: "https://thumbs2.imgbox.com/3d/56/pnu3yoMV_t.png"
+      image: `${process.env.API_URL}/fotos/GEL-TÉRMICO1.png`
     },
     {
       name_icon: "cosmeticos",
       name: "Gel excitante cosméticos em gel ice",
       description: "",
       price: 15,
-      image: "https://thumbs2.imgbox.com/e8/c1/qLL0mhYx_t.png"
+      image: `${process.env.API_URL}/fotos/GEL-TÉRMICO.png`
     },
     {
       name_icon: "cosmeticos",
       name: "Bolinha caps sex sabor cereja",
       description: "",
       price: 13,
-      image: "https://thumbs2.imgbox.com/9a/85/8m5Fp8lC_t.png"
+      image: `${process.env.API_URL}/fotos/CAPSULA-GELATINA.png`
     },
     {
       name_icon: "cosmeticos",
       name: "Bolinha Pepper ball esquenta",
       description: "",
       price: 13,
-      image: "https://thumbs2.imgbox.com/60/ae/523q9Lly_t.png"
+      image: `${process.env.API_URL}/fotos/ESQUENTA-PLUS.png`
     },
     {
       name_icon: "cosmeticos",
       name: "Bolinha Pepper ball gela",
       description: "",
       price: 13,
-      image: "https://thumbs2.imgbox.com/8d/7f/XVdm5wn5_t.png"
+      image: `${process.env.API_URL}/fotos/GELA-PLUS.png`
     },
     {
       name_icon: "cosmeticos",
       name: "Gel excitante goze +  sexy fantasy",
       description: "",
       price: 36,
-      image: "https://thumbs2.imgbox.com/5e/9e/K9Ww2o5s_t.png"
+      image: `${process.env.API_URL}/fotos/GEL-ACELERADOR.png`
     },
     {
       name_icon: "cosmeticos",
       name: "Gel Excitante feminino Xana loka 15g",
       description: "",
       price: 36,
-      image: "https://thumbs2.imgbox.com/4b/f1/tf4ED7Rb_t.png"
+      image: `${process.env.API_URL}/fotos/GEL-150G.png`
     },
     {
       name_icon: "cosmeticos",
       name: "Pomada Fogo do Dragão Tradicional 4g",
       description: "",
       price: 15,
-      image: "https://thumbs2.imgbox.com/5e/48/iTi317Tp_t.png"
+      image: `${process.env.API_URL}/fotos/POMADA.png`
     },
     {
       name_icon: "cosmeticos",
       name: "Gel adstringente sempre virgem 25g",
       description: "",
       price: 57,
-      image: "https://thumbs2.imgbox.com/19/9a/V5QNGl7W_t.png"
+      image: `${process.env.API_URL}/fotos/GEL-ADSTRINGENTE1.png`
     },
     {
       name_icon: "cosmeticos",
       name: "Gel dessensibilizante anal 7 sensações  25g",
       description: "",
       price: 57,
-      image: "https://thumbs2.imgbox.com/c7/ce/SGKwU9jh_t.png"
+      image: `${process.env.API_URL}/fotos/GEL-LUBRIFICANTE.png`
     },
     {
       name_icon: "cosmeticos",
       name: "Gel dessensibilizante anal lacradinha",
       description: "",
       price: 34,
-      image: "https://thumbs2.imgbox.com/b2/ee/OCw2BZIz_t.png"
+      image: `${process.env.API_URL}/fotos/GEL-ADSTRINGENTE.png`
     },
     {
       name_icon: "cosmeticos",
       name: "Gel retardante Volumão Hotflawer 25g",
       description: "",
       price: 50,
-      image: "https://thumbs2.imgbox.com/41/38/cZ8yRPWI_t.png"
+      image: `${process.env.API_URL}/fotos/INTENSIFICADOR.png`
     },
     {
       name_icon: "cosmeticos",
       name: "Gel retardante poção do tempo INTT 15g",
       description: "",
       price: 34,
-      image: "https://thumbs2.imgbox.com/ad/b6/tIZfqfs2_t.png"
+      image: `${process.env.API_URL}/fotos/GEL-PROLONGADOR.png`
     },
     {
       name_icon: "cosmeticos",
       name: "Óleo de massagem beijável morango",
       description: "",
       price: 57,
-      image: "https://thumbs2.imgbox.com/56/c7/LVZbWhKW_t.png"
+      image: `${process.env.API_URL}/fotos/óleo-corporal1.png`
     },
     {
       name_icon: "cosmeticos",
       name: "Óleo de massagem amor próprio 120ml",
       description: "",
       price: 50,
-      image: "https://thumbs2.imgbox.com/30/ad/UZckBj8h_t.png"
+      image:  `${process.env.API_URL}/fotos/óleo-corporal2.png`
     },
     {
       name_icon: "cosmeticos",
       name: "Bebida - Mel exotic Feminino",
       description: "",
       price: 14,
-      image: "https://thumbs2.imgbox.com/47/4e/jkUs7TKP_t.png"
+      image:  `${process.env.API_URL}/fotos/mel-estimulante-masculino.png`
     },
     {
       name_icon: "cosmeticos",
       name: "Mel exotic masculino",
       description: "",
       price: 14,
-      image: "https://thumbs2.imgbox.com/54/3d/JeS6tTHR_t.png"
+      image: `${process.env.API_URL}/fotos/mel-estimulante-feminino.png`
     },
     {
       name_icon: "cosmeticos",
       name: "Mel Power honey 10g",
       description: "",
       price: 34,
-      image: "https://thumbs2.imgbox.com/24/4d/81zLjlez_t.png"
+      image: `${process.env.API_URL}/fotos/power-honey.png`
     },
     {
       name_icon: "cosmeticos",
       name: "Bebida - Pó da bruxinha",
       description: "",
       price: 11,
-      image: "https://thumbs2.imgbox.com/a0/85/yIeYaBRY_t.png"
+      image: `${process.env.API_URL}/fotos/bebidas.png`
     },
     {
       name_icon: "cosmeticos",
       name: "Garganta profunda",
       description: "",
       price: 11,
-      image: "https://thumbs2.imgbox.com/78/db/1tZa8aUx_t.png"
+      image: `${process.env.API_URL}/fotos/bebidas2.png`
     },
     {
       name_icon: "cosmeticos",
       name: "SEXY ENERGY tesão de vaca",
       description: "",
       price: 11,
-      image: "https://thumbs2.imgbox.com/aa/fc/CRp6al1H_t.png"
+      image: `${process.env.API_URL}/fotos/bebidas1.png`
     },
     {
       name_icon: "cosmeticos",
       name: "SEXY ENERGY tesão de touro",
       description: "",
       price: 11,
-      image: "https://thumbs2.imgbox.com/3d/a0/kTv3epfU_t.png"
+      image: `${process.env.API_URL}/fotos/bebidas3.png`
     },
     {
       
@@ -827,7 +827,7 @@ const snacks = [
       name: "Roleta do amor Gire",
       description: "",
       price: 23,
-      image: "https://thumbs2.imgbox.com/9b/0e/kJDogAS2_t.png"
+      image: `${process.env.API_URL}/fotos/brincadeira1.png`
     },
     {
       
@@ -835,7 +835,7 @@ const snacks = [
       name: "Dado Hétero Posições",
       description: "",
       price: 11,
-      image: "https://thumbs2.imgbox.com/49/bc/ZexNTZ2h_t.png"
+      image: `${process.env.API_URL}/fotos/brincadeira2.png`
     },
     {
       
@@ -843,7 +843,7 @@ const snacks = [
       name: "Baralho Jogo de casais Quiz - 20 cartas",
       description: "",
       price: 16,
-      image: "https://thumbs2.imgbox.com/4b/00/6hNUKdfX_t.png"
+      image: `${process.env.API_URL}/fotos/brincadeira3.png`
     },
     {
       
@@ -851,7 +851,7 @@ const snacks = [
       name: "Baralho hétero - 54 cartas",
       description: "",
       price: 39,
-      image: "https://thumbs2.imgbox.com/5c/45/UHK3JaGt_t.png"
+      image: `${process.env.API_URL}/fotos/brincadeira4.png`
     }
 ]
 
