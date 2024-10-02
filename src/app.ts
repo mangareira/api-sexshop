@@ -24,7 +24,14 @@ export class App {
 
     private middlawareInitializer () {
         this.app.use(express.json())
-        this.app.use(cors())
+         // Configurando CORS com opções
+        const corsOptions = {
+            origin: ['http://localhost:3000', 'https://sexymorena.com.br'], // Permitir múltiplas o>
+            methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // Métodos permitidos
+            allowedHeaders: ['Content-Type', 'Authorization'], // Cabeçalhos permitidos
+            credentials: true, // Permitir cookies se necessário
+        }
+        this.app.use(cors(corsOptions))
         this.app.use(express.urlencoded({extended: true}))
         this.app.use('/fotos', express.static(path.join(__dirname,'..', 'fotos')))
     }
